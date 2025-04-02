@@ -7,7 +7,7 @@
     --background-image: url('https://tse1.mm.bing.net/th?id=OIP.RrAC9CIPIglN-3MAJNrvWgHaEK&pid=Api&P=0&h=220'); /* Eevee image */
 }
 
-/* Apply background image and color overlay */
+/* Apply the Eevee image as the background for the entire theme */
 .theme-dark, .theme-light {
     background: var(--primary-color) !important; /* Set a fallback background color */
     background-image: var(--background-image) !important; /* Set your Eevee image */
@@ -16,7 +16,7 @@
     background-repeat: no-repeat !important; /* Prevent image repetition */
 }
 
-/* Change text color for readability */
+/* Change text color to white for readability */
 .markup, .title- {
     color: var(--text-color) !important;
 }
