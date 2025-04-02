@@ -1,0 +1,41 @@
+/* Eevee Vencord Theme - Apply in Vencord's custom CSS */
+:root {
+    --background-color: #f3e5ab;
+    --primary-color: #c47f36;
+    --secondary-color: #8d5524;
+    --text-color: #4a2c12;
+    --accent-color: #e3a869;
+}
+
+/* Apply background color */
+.theme-dark, .theme-light {
+    background-color: var(--background-color) !important;
+}
+
+/* Change text color */
+.markup, .title-
+{
+    color: var(--text-color) !important;
+}
+
+/* Style buttons and interactive elements */
+.button-3bklZh, .look-filled-1Gx00P {
+    background-color: var(--accent-color) !important;
+    color: white !important;
+}
+.button-3bklZh:hover, .look-filled-1Gx00P:hover {
+    background-color: var(--secondary-color) !important;
+}
+
+/* Customize user profile popups */
+.userPopout-2j1gM4 {
+    background-color: var(--primary-color) !important;
+    border-radius: 10px !important;
+}
+
+/* Add some Eevee vibes to message containers */
+.message-2qnXI6 {
+    background-color: rgba(228, 198, 139, 0.3) !important;
+    border-radius: 8px !important;
+    padding: 5px !important;
+}
