@@ -1,15 +1,20 @@
 /* Eevee Vencord Theme - Apply in Vencord's custom CSS */
 :root {
-    --background-color: #f3e5ab; /* Light beige background */
+    --background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the image */
     --primary-color: #c47f36; /* Eevee's brown */
     --secondary-color: #8d5524; /* Darker brown */
-    --text-color: #4a2c12; /* Dark brown text */
+    --text-color: #fff; /* White text for visibility */
     --accent-color: #e3a869; /* Golden accent */
+    --image-url: url('YOUR_IMAGE_URL'); /* Replace with your Eevee image URL */
 }
 
-/* Apply background color */
+/* Apply background image and overlay */
 .theme-dark, .theme-light {
     background-color: var(--background-color) !important;
+    background-image: var(--image-url) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
 /* Change text color */
@@ -19,12 +24,12 @@
 
 /* Customize chat background */
 .messages-3KcXyZ {
-    background-color: rgba(228, 198, 139, 0.2) !important;
+    background-color: rgba(228, 198, 139, 0.5) !important; /* Soft beige overlay */
 }
 
 /* Modify the text chat area */
 .message-2qnXI6 {
-    background-color: rgba(228, 198, 139, 0.3) !important;
+    background-color: rgba(228, 198, 139, 0.4) !important;
     border-radius: 8px !important;
     padding: 5px !important;
 }
