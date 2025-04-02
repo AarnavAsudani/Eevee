@@ -1,35 +1,34 @@
 /* Eevee Vencord Theme - Apply in Vencord's custom CSS */
 :root {
-    --background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the image */
     --primary-color: #c47f36; /* Eevee's brown */
     --secondary-color: #8d5524; /* Darker brown */
     --text-color: #fff; /* White text for visibility */
     --accent-color: #e3a869; /* Golden accent */
-    --image-url: url('https://tse1.mm.bing.net/th?id=OIP.RrAC9CIPIglN-3MAJNrvWgHaEK&pid=Api&P=0&h=220'); /* Replace with your Eevee image URL */
+    --background-image: url('https://tse1.mm.bing.net/th?id=OIP.RrAC9CIPIglN-3MAJNrvWgHaEK&pid=Api&P=0&h=220'); /* Eevee image */
 }
 
-/* Apply background image and overlay */
+/* Apply background image and color overlay */
 .theme-dark, .theme-light {
-    background-color: var(--background-color) !important;
-    background-image: var(--image-url) !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
+    background: var(--primary-color) !important; /* Set a fallback background color */
+    background-image: var(--background-image) !important; /* Set your Eevee image */
+    background-size: cover !important; /* Ensure the image covers the entire background */
+    background-position: center !important; /* Center the image */
+    background-repeat: no-repeat !important; /* Prevent image repetition */
 }
 
-/* Change text color */
+/* Change text color for readability */
 .markup, .title- {
     color: var(--text-color) !important;
 }
 
 /* Customize chat background */
 .messages-3KcXyZ {
-    background-color: rgba(228, 198, 139, 0.5) !important; /* Soft beige overlay */
+    background-color: rgba(228, 198, 139, 0.5) !important; /* Soft beige overlay for messages */
 }
 
 /* Modify the text chat area */
 .message-2qnXI6 {
-    background-color: rgba(228, 198, 139, 0.4) !important;
+    background-color: rgba(228, 198, 139, 0.6) !important; /* Slightly more opaque */
     border-radius: 8px !important;
     padding: 5px !important;
 }
