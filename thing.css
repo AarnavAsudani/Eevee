@@ -1,10 +1,11 @@
 /* Eevee Vencord Theme - Apply in Vencord's custom CSS */
 :root {
-    --background-color: #f3e5ab;
-    --primary-color: #c47f36;
-    --secondary-color: #8d5524;
-    --text-color: #4a2c12;
-    --accent-color: #e3a869;
+    --background-color: #f3e5ab; /* Light beige background */
+    --primary-color: #c47f36; /* Eevee's brown */
+    --secondary-color: #8d5524; /* Darker brown */
+    --text-color: #4a2c12; /* Dark brown text */
+    --accent-color: #e3a869; /* Golden accent */
+    --hover-color: #c0a356; /* Lighter golden for hover */
 }
 
 /* Apply background color */
@@ -13,18 +14,34 @@
 }
 
 /* Change text color */
-.markup, .title-
-{
+.markup, .title- {
     color: var(--text-color) !important;
+}
+
+/* Customize chat background */
+.messages-3KcXyZ {
+    background-color: rgba(228, 198, 139, 0.2) !important;
 }
 
 /* Style buttons and interactive elements */
 .button-3bklZh, .look-filled-1Gx00P {
     background-color: var(--accent-color) !important;
     color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
 }
+
 .button-3bklZh:hover, .look-filled-1Gx00P:hover {
-    background-color: var(--secondary-color) !important;
+    background-color: var(--hover-color) !important;
+}
+
+/* Modify the text chat area */
+.message-2qnXI6 {
+    background-color: rgba(228, 198, 139, 0.3) !important;
+    border-radius: 8px !important;
+    padding: 5px !important;
 }
 
 /* Customize user profile popups */
@@ -33,9 +50,38 @@
     border-radius: 10px !important;
 }
 
-/* Add some Eevee vibes to message containers */
-.message-2qnXI6 {
-    background-color: rgba(228, 198, 139, 0.3) !important;
-    border-radius: 8px !important;
-    padding: 5px !important;
+/* Chat input styling */
+.container-2k3hPx {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.container-2k3hPx input {
+    background-color: transparent !important;
+    border: none !important;
+    color: var(--text-color) !important;
+}
+
+/* Change channel list background */
+.channel-2QD9O3 {
+    background-color: var(--primary-color) !important;
+}
+
+/* Sidebar icons and text */
+.guilds-2_Jp4A {
+    background-color: var(--primary-color) !important;
+    color: var(--text-color) !important;
+}
+
+/* Add hover effect for guild icons */
+.guild-2-LP5pG:hover {
+    background-color: var(--hover-color) !important;
+}
+
+/* User list style */
+.members-3pZs7j {
+    background-color: var(--primary-color) !important;
+    color: var(--text-color) !important;
 }
