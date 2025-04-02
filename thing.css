@@ -7,13 +7,14 @@
     --background-image: url('https://tse1.mm.bing.net/th?id=OIP.RrAC9CIPIglN-3MAJNrvWgHaEK&pid=Api&P=0&h=220'); /* Eevee image */
 }
 
-/* Apply the Eevee image as the background for the entire theme */
+/* Apply the Eevee image as the background to the entire Discord interface */
 .theme-dark, .theme-light {
-    background: var(--primary-color) !important; /* Set a fallback background color */
-    background-image: var(--background-image) !important; /* Set your Eevee image */
+    background: var(--primary-color) !important; /* Fallback color */
+    background-image: var(--background-image) !important; /* Set Eevee image */
     background-size: cover !important; /* Ensure the image covers the entire background */
     background-position: center !important; /* Center the image */
     background-repeat: no-repeat !important; /* Prevent image repetition */
+    min-height: 100vh !important; /* Make sure the background covers the entire height */
 }
 
 /* Change text color to white for readability */
