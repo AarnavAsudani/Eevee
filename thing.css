@@ -60,11 +60,6 @@
     color: var(--text-color) !important;
 }
 
-/* Add hover effect for guild icons */
-.guild-2-LP5pG:hover {
-    background-color: var(--primary-color) !important;
-}
-
 /* User list style */
 .members-3pZs7j {
     background-color: var(--primary-color) !important;
